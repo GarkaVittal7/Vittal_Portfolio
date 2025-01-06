@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garka_Vittal_Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            
+            <span>Garka Vittal</span>
+        </div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="profile-image">
+                    <img src="/images/passport.size1.jpg" alt="Garka Vittal" id="picc">
+                </div>
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>Hello! I’m Garka Vittal, a passionate developer with a strong background in Java, web technologies, and more. I'm continuously learning and exploring new technologies to enhance my skills and work on impactful projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-box">
+                <div class="skill-item">Java</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">HTML & CSS</div> 
+                <div class="skill-item">React</div>
+                <div class="skill-item">SQL</div>
+                <div class="skill-item">Spring Framework</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="edu-box">
+                <h3>B.Tech in Computer Science</h3>
+                <p><strong>Kshatriya College of Engineering</strong>, Nizamabad</p>
+                <p>2020 - 2024</p>
+            </div>
+            <div class="edu-box">
+                <h3>Intermediate</h3>
+                <p><strong>S.R.Junior College</strong>, Nizamabad</p>
+                <p>2018 - 2024</p>
+            </div>
+            <div class="edu-box">
+                <h3>S.S.C</h3>
+                <p><strong>Scholars High School</strong>, Nizamabad</p>
+                <p>2017 - 2018</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+<section id="projects">
+    <div class="container">
+        <h2>Projects</h2>
+
+        <div class="project-box">
+            <div class="project-image">
+                <img src="/images/bank_management_system.jpg" alt="Bank Management System">
+            </div>
+            <div class="project-details">
+                <h3>Bank Management System</h3>
+                <p>Developed a robust Bank Management System using Java with Maven as project management tool. 
+                    <br>• Implemented core functionalities such as user registration, login, credit, debit transaction, password management, and balance enquiry. 
+                    <br>• Uses a database (MySQL) to store account and transaction details.</p>
+            </div>
+        </div>
+
+        <div class="project-box">
+            <div class="project-image">
+                <img src="/images/inspecting.jpg" alt="Solar Plant Inspection">
+            </div>
+            <div class="project-details">
+                <h3>Inspecting Mega Solar Plants Using Computer Vision and Drone Technologies</h3>
+                <p>Inspecting mega solar plants using computer vision and drone technologies can greatly enhance efficiency and accuracy. 
+                    With computer vision, you can analyze images or videos captured by drones to detect any potential issues such as damaged panels or debris. 
+                    <br>• This helps in preventive maintenance and ensures optimal performance of the solar plants.</p>
+            </div>
+        </div>
+
+        <div class="project-box">
+            <div class="project-image">
+                <img src="/images/sentiment.jpg" alt="Sentiment Analysis">
+            </div>
+            <div class="project-details">
+                <h3>Sentiment Analysis Using Machine Learning</h3>
+                <p>Sentiment Analysis Using Machine Learning is the process of determining the emotional tone behind a body of text. 
+                    It's commonly used to analyze customer reviews, social media posts, or any form of written communication to understand the sentiment (positive, negative, or neutral) conveyed by the text. 
+                    <br>• This is typically achieved by applying machine learning techniques to classify text into categories based on its sentiment.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Resume Section -->
+<section id="resume">
+    <div class="container">
+        <h2>My Resume</h2>
+        <p>Click the button below to download my resume and learn more about my experience and skills.</p>
+        <a href="/Vittal_Resume....pdf" class="resume-btn" download>Download Resume</a>
+    </div>
+</section>
+
+    
+
+    
+
+    <!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:vittal7421@gmail.com">vittal7421@gmail.com</a></p>
+        <p>Phone: <a href="tel:+917981276258">+91 7981276258</a></p>
+        
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/garka-vittal-930989264" target="_blank"><img src="/images/linkedin.png" alt="LinkedIn" class="social-icon"></a>
+            <a href="https://github.com/" target="_blank"><img src="/images/github.png" alt="GitHub" class="social-icon"></a>
+            <a href="https://www.instagram.com/vittal_garka__7/profilecard/?igsh=MWRrNm0zOTVkeGU5bA==" target="_blank"><img src="/images/instagram.png" alt="Instagram" class="social-icon"></a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Garka Vittal. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+    <!-- JavaScript for smooth scroll -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
